@@ -108,7 +108,7 @@ export default function StockChart({ symbol = "AAPL" }) {
       return memoizedStockData
         .filter(
           (stock) =>
-            stock.symbol.toLowerCase().includes(searchQuery.toLowerCase())
+            stock.symbol.toLowerCase().includes(stockSymbol.toLowerCase())
           // stock.name.toLowerCase().includes(searchQuery.toLowerCase())
         )
         .slice(0, 10);
